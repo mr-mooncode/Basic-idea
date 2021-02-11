@@ -1,0 +1,39 @@
+
+print("Calculator")
+
+def calculate():
+  print()
+  num1 = float(input("Enter first num:\n"))
+  num2 = float(input("Enter second num:\n"))
+  opt = input("Enter the operator:\n")
+
+  if opt == "+":
+    print("This is your value\n ", + num1 + num2 )
+  elif opt == "-":
+    print("This is your value\n ", + num1 - num2 )
+  elif opt == "*":
+    print("This is your value\n", + num1 * num2)
+  elif opt == "/":
+    print("This is your value\n", + num1 / num2 )
+  else:
+    print("Error operator")
+
+
+
+def try_again():
+  x = int(0)
+  print()
+  while x < 2:
+    print()
+    user_input =input("Would you like to try again?\ny/n:\n")
+
+    if user_input == 'y':
+      calculate()
+      x += 0
+    else:
+      print("Thank you for using.")
+      x += 2
+
+
+calculate()
+try_again()
